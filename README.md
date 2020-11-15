@@ -22,5 +22,4 @@ get_supported()<br>
 https://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
 
 3. whlファイルをインストール <br>
-例<br>
-> pip install ./保存したwhlファイルのダウンロード先/PyAudio‑0.2.11‑cpXX‑cpXX‑win_amd64.whl <br>
+例) >>> pip install ./保存したwhlファイルのダウンロード先/PyAudio‑0.2.11‑cpXX‑cpXX‑win_amd64.whl <br>
