@@ -1,0 +1,173 @@
+---
+# 使用するエフェクタ
+FX: ["SD"]
+# ネットワークパラメータ
+input_timesteps: 2048
+output_timesteps: 512
+batch_size: 16
+set_float: "float32"
+max_epochs : 1000
+patience: 300
+param_save: True
+Network_type: "wavenet"
+# WaveNetのパラメータ
+single_conv: False
+layer_num: 10
+channel: 16
+filter_size: 3
+gate: "softgated"
+LSTM_ch: 96
+GPU_use: True
+# 高域強調フィルタのパラメータ
+pre_emphasis: 0.95    
+# スペクトログラムのパラメータ
+Fs: 44100
+spectrogram_type: "STFT"
+power: True
+mel: True
+# STFT param
+N : 8192
+frame_length: 1024
+frame_step: 256
+# MFS param
+lower_hz_mel: 60
+upper_hz_mel: 22000
+num_mel_bins_mel: 300
+# CQT param
+fmin_cqt: 27.5
+nhop_cqt: 512
+n_bin_cqt: 108
+fratio_cqt: 12
+# 損失関数と評価関数のパラメータ
+loss_shift: True
+shift_epoch: 1
+p_wave : 1
+p_freq : 0.1
+wave_loss : "MSE"
+freq_loss : "KL"
+
+plot_x_range: [3, 3.03]
+
+
+
+# 学習データ
+clean_data_SD:
+    - [../Datasets/IDMT_SD/train_x.wav]
+reference_data_SD:
+    - [../Datasets/IDMT_SD/train_sd.wav]
+clean_data_val_SD:
+  - [../Datasets/IDMT_SD/val_x.wav]
+reference_data_val_SD:
+  - [../Datasets/IDMT_SD/val_sd.wav]
+test_data_x_SD:
+  - [../Datasets/IDMT_SD/test1_x.wav]
+  - [../Datasets/IDMT_SD/test2_x.wav]
+  - [../Datasets/IDMT_SD/test3_x.wav]
+  - [../Datasets/IDMT_SD/test4_x.wav]
+test_data_y_SD:
+  - [../Datasets/IDMT_SD/test1_sd.wav]
+  - [../Datasets/IDMT_SD/test2_sd.wav]
+  - [../Datasets/IDMT_SD/test3_sd.wav]
+  - [../Datasets/IDMT_SD/test4_sd.wav]
+
+clean_data_SD_rev:
+    - [../Datasets/IDMT_SD/train_sd.wav]
+reference_data_SD_rev:
+    - [../Datasets/IDMT_SD/train_x.wav]
+clean_data_val_SD_rev:
+  - [../Datasets/IDMT_SD/val_sd.wav]
+reference_data_val_SD_rev:
+  - [../Datasets/IDMT_SD/val_x.wav]
+test_data_x_SD_rev:
+  - [../Datasets/IDMT_SD/test1_sd.wav]
+  - [../Datasets/IDMT_SD/test2_sd.wav]
+  - [../Datasets/IDMT_SD/test3_sd.wav]
+  - [../Datasets/IDMT_SD/test4_sd.wav]
+test_data_y_SD_rev:
+  - [../Datasets/IDMT_SD/test1_x.wav]
+  - [../Datasets/IDMT_SD/test2_x.wav]
+  - [../Datasets/IDMT_SD/test3_x.wav]
+  - [../Datasets/IDMT_SD/test4_x.wav]
+
+
+
+# 学習データ
+clean_data_SD3:
+    - [../Datasets/IDMT_SD3/train_x.wav]
+reference_data_SD3:
+    - [../Datasets/IDMT_SD3/train_sd.wav]
+clean_data_val_SD3:
+  - [../Datasets/IDMT_SD3/val_x.wav]
+reference_data_val_SD3:
+  - [../Datasets/IDMT_SD3/val_sd.wav]
+test_data_x_SD3:
+  - [../Datasets/IDMT_SD3/test1_x.wav]
+  - [../Datasets/IDMT_SD3/test2_x.wav]
+  - [../Datasets/IDMT_SD3/test3_x.wav]
+  - [../Datasets/IDMT_SD3/test4_x.wav]
+test_data_y_SD3:
+  - [../Datasets/IDMT_SD3/test1_sd.wav]
+  - [../Datasets/IDMT_SD3/test2_sd.wav]
+  - [../Datasets/IDMT_SD3/test3_sd.wav]
+  - [../Datasets/IDMT_SD3/test4_sd.wav]
+
+clean_data_BD:
+    - [../Datasets/IDMT_BD/train_x.wav]
+reference_data_BD:
+    - [../Datasets/IDMT_BD/train_bd.wav]
+clean_data_val_BD:
+  - [../Datasets/IDMT_BD/val_x.wav]
+reference_data_val_BD:
+  - [../Datasets/IDMT_BD/val_bd.wav]
+test_data_x_BD:
+  - [../Datasets/IDMT_BD/test1_x.wav]
+  - [../Datasets/IDMT_BD/test2_x.wav]
+  - [../Datasets/IDMT_BD/test3_x.wav]
+  - [../Datasets/IDMT_BD/test4_x.wav]
+
+test_data_y_BD:
+  - [../Datasets/IDMT_BD/test1_bd.wav]
+  - [../Datasets/IDMT_BD/test2_bd.wav]
+  - [../Datasets/IDMT_BD/test3_bd.wav]
+  - [../Datasets/IDMT_BD/test4_bd.wav]
+
+
+clean_data_TS:
+    - [../Datasets/IDMT_TS/train_x.wav]
+reference_data_TS:
+    - [../Datasets/IDMT_TS/train_ts.wav]
+clean_data_val_TS:
+  - [../Datasets/IDMT_TS/val_x.wav]
+reference_data_val_TS:
+  - [../Datasets/IDMT_TS/val_ts.wav]
+test_data_x_TS:
+  - [../Datasets/IDMT_TS/test1_x.wav]
+  - [../Datasets/IDMT_TS/test2_x.wav]
+  - [../Datasets/IDMT_TS/test3_x.wav]
+  - [../Datasets/IDMT_TS/test4_x.wav]
+test_data_y_TS:
+  - [../Datasets/IDMT_TS/test1_ts.wav]
+  - [../Datasets/IDMT_TS/test2_ts.wav]
+  - [../Datasets/IDMT_TS/test3_ts.wav]
+  - [../Datasets/IDMT_TS/test4_ts.wav]
+
+
+clean_data_RAT:
+    - [../Datasets/IDMT_RAT/train_x.wav]
+reference_data_RAT:
+    - [../Datasets/IDMT_RAT/train_rat.wav]
+clean_data_val_RAT:
+  - [../Datasets/IDMT_RAT/val_x.wav]
+reference_data_val_RAT:
+  - [../Datasets/IDMT_RAT/val_rat.wav]
+test_data_x_RAT:
+  - [../Datasets/IDMT_RAT/test1_x.wav]
+  - [../Datasets/IDMT_RAT/test2_x.wav]
+  - [../Datasets/IDMT_RAT/test3_x.wav]
+  - [../Datasets/IDMT_RAT/test4_x.wav]
+test_data_y_RAT:
+  - [../Datasets/IDMT_RAT/test1_rat.wav]
+  - [../Datasets/IDMT_RAT/test2_rat.wav]
+  - [../Datasets/IDMT_RAT/test3_rat.wav]
+  - [../Datasets/IDMT_RAT/test4_rat.wav]
+
