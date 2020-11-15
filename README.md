@@ -1,4 +1,6 @@
 # Real_Time_Modeling
+WaveNetを用いた歪みエフェクタのリアルタイムモデリング <br>
+
 Install version list: <br>
 python==3.7.7 <br>
 numpy==1.16.4 <br>
