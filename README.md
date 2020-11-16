@@ -17,8 +17,8 @@ Windowsでは標準のサウンドドライバを用いると遅延が大きく�
 以下がインストールの手順になります．<br>
 1. pipのバージョンを確認(pip==20.1.1の場合)<br>
 '''
-from pip._internal.utils.compatibility_tags import get_supported <br>
-get_supported()<br>
+from pip._internal.utils.compatibility_tags import get_supported
+get_supported()
 '''
 
 2. 下記URLから1で確認したpipに対応するpyaudioの.whlファイルをダウンロード <br>
