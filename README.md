@@ -1,4 +1,4 @@
-# Real_Time_Modeling
+# Real Time Modeling
 WaveNetを用いた歪みエフェクタのリアルタイムモデリング <br>
 Intel Core i7 CPU 1.90GHz だとぎりぎりリアルタイムモデリングできました． <br>
 
@@ -31,7 +31,7 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
 mac, LINUXではその辺最適化されているようで普通のインストールで大丈夫です．
 
 
-##実行方法
+## 実行方法
 ---
 ```
 $ python RT_modeling.py
