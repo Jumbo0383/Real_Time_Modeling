@@ -29,6 +29,12 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
 
 mac, LINUXではその辺最適化されているようで普通のインストールで大丈夫です．
 
+## 学習方法
+```
+$ python train_wavenet.py
+```
+で学習が始まります．各種パラメータ等の変更は config_WaveNet.ymlから行ってください．
+また，学習データとテストデータのディレクトリも.ymlから適宜変更お願いします．
 
 ## 実行方法
 ```
