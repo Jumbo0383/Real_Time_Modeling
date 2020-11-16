@@ -59,7 +59,8 @@ Host API Count = 5
 {'index': 4, 'structVersion': 1, 'type': 11, 'name': 'Windows WDM-KS', 'deviceCount': 16, 'defaultInputDevice': 13, 'defaultOutputDevice': 14}
 
 ASIO Device Count = 1
-{'index': 12, 'structVersion': 2, 'name': 'Focusrite USB ASIO', 'hostApi': 2, 'maxInputChannels': 6, 'maxOutputChannels': 6, 'defaultLowInputLatency': 0.011609977324263039, 'defaultLowOutputLatency': 0.011609977324263039, 'defaultHighInputLatency': 0.023219954648526078, 'defaultHighOutputLatency': 0.023219954648526078, 'defaultSampleRate': 44100.0}```
+{'index': 12, 'structVersion': 2, 'name': 'Focusrite USB ASIO', 'hostApi': 2, 'maxInputChannels': 6, 'maxOutputChannels': 6, 'defaultLowInputLatency': 0.011609977324263039, 'defaultLowOutputLatency': 0.011609977324263039, 'defaultHighInputLatency': 0.023219954648526078, 'defaultHighOutputLatency': 0.023219954648526078, 'defaultSampleRate': 44100.0}
+```
 
 上記のリストの中から使用するデバイスを使用．
 ```
