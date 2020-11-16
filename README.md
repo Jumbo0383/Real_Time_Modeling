@@ -11,7 +11,7 @@ librosa==0.6.3 <br>
 pyaudio==0.2.11 <br>
 pip==20.1.1 <br><br>
 
-### pyaudioインストールについて(Windows)<br>
+## pyaudioインストールについて(Windows)<br>
 ---
 Windowsでは標準のサウンドドライバを用いると遅延が大きくなるので，リアルタイムでのモデリングを行おうとすればASIOドライバを用いる必要があります．
 しかし，通常のpip等でインストールするpyaudioはASIOに対応していないのでASIOに対応したpyaudioをインストールする必要があります．
@@ -31,7 +31,8 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
 mac, LINUXではその辺最適化されているようで普通のインストールで大丈夫です．
 
 
-実行方法
+##実行方法
+---
 ```
 $ python RT_modeling.py
 ```
