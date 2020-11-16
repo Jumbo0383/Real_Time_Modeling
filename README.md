@@ -38,11 +38,11 @@ $ python RT_modeling.py
 ```
 yml file>>> WaveNet1_SD.yml
 ```
-で使用するymlファイルを入力(ここでは WaveNet1_SD.yml)
+で使用するymlファイルを入力(ここでは WaveNet1_SD.yml)．
 ```
 h5 file >>> WaveNet1_SD.h5
 ```
-で使用するh5ファイルを入力(ここでは WaveNet1_SD.h5)
+で使用するh5ファイルを入力(ここでは WaveNet1_SD.h5)．
 
 上記2つを入力すると以下のように使用できるオーディオデバイスが表示される．
 ```
@@ -61,8 +61,10 @@ Host API Count = 5
 ASIO Device Count = 0
 ```
 
-上記のリストの中から使用するデバイスを使用
+上記のリストの中から使用するデバイスを使用．
 ```
 device index>>>
 ```
-で使用するデバイスIDを入力
+で使用するデバイスIDを入力．
+
+モデル読み込み後にリアルタイムモデリングが動きます(モデルの読み込みに少し時間がかかります)．
