@@ -1,10 +1,6 @@
 # pyaudioをインポート
 import pyaudio
 import numpy as np
-import wave
-import time
-from train_wavenet import WaveNet
-from keras import backend as K
 
 
 
