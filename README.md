@@ -16,15 +16,15 @@ Windowsでは標準のサウンドドライバを用いると遅延が大きく�
 しかし，通常のpip等でインストールするpyaudioはASIOに対応していないのでASIOに対応したpyaudioをインストールする必要があります．
 以下がインストールの手順になります．<br>
 1. pipのバージョンを確認(pip==20.1.1の場合)<br>
-'''
+```
 from pip._internal.utils.compatibility_tags import get_supported
 get_supported()
-'''
+```
 
 2. 下記URLから1で確認したpipに対応するpyaudioの.whlファイルをダウンロード <br>
 https://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
 
 3. whlファイルをインストール <br>
-例) >>> pip install ./保存したwhlファイルのダウンロード先/PyAudio‑0.2.11‑cpXX‑cpXX‑win_amd64.whl <br>
+例) >>> ```pip install ./保存したwhlファイルのダウンロード先/PyAudio‑0.2.11‑cpXX‑cpXX‑win_amd64.whl``` <br>
 
 mac, LINUXではその辺最適化されているようで普通のインストールで大丈夫です．
