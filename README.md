@@ -11,7 +11,7 @@ librosa==0.6.3 <br>
 pyaudio==0.2.11 <br>
 pip==20.1.1 <br><br>
 
-・ pyaudioインストールについて(Windows)<br>
+pyaudioインストールについて(Windows)<br>
 Windowsでは標準のサウンドドライバを用いると遅延が大きくなるので，リアルタイムでのモデリングを行おうとすればASIOドライバを用いる必要があります．
 しかし，通常のpip等でインストールするpyaudioはASIOに対応していないのでASIOに対応したpyaudioをインストールする必要があります．
 以下がインストールの手順になります．<br>
@@ -28,3 +28,22 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
 例) >>> ```pip install ./保存したwhlファイルのダウンロード先/PyAudio‑0.2.11‑cpXX‑cpXX‑win_amd64.whl``` <br>
 
 mac, LINUXではその辺最適化されているようで普通のインストールで大丈夫です．
+
+
+実行方法
+```
+$ python RT_modeling.py
+```
+```
+yml file>>>
+```
+で使用するymlファイルを入力(ここでは WaveNet1_SD.yml)
+```
+h5 file >>>
+```
+で使用するh5ファイルを入力(ここでは WaveNet1_SD.h5)
+
+```
+device index>>>
+```
+で使用するデバイスIDを入力
