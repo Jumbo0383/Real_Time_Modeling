@@ -34,15 +34,34 @@ mac, LINUXではその辺最適化されているようで普通のインスト�
 ```
 $ python RT_modeling.py
 ```
+でリアルタイムモデリングのプログラムが動きます．
 ```
-yml file>>>
+yml file>>> WaveNet1_SD.yml
 ```
 で使用するymlファイルを入力(ここでは WaveNet1_SD.yml)
 ```
-h5 file >>>
+h5 file >>> WaveNet1_SD.h5
 ```
 で使用するh5ファイルを入力(ここでは WaveNet1_SD.h5)
 
+上記2つを入力すると以下のように使用できるオーディオデバイスが表示される．
+```
+Host API Count = 5
+
+{'index': 0, 'structVersion': 1, 'type': 2, 'name': 'MME', 'deviceCount': 5, 'defaultInputDevice': 1, 'defaultOutputDevice': 3}
+
+{'index': 1, 'structVersion': 1, 'type': 1, 'name': 'Windows DirectSound', 'deviceCount': 5, 'defaultInputDevice': 5, 'defaultOutputDevice': 7}
+
+{'index': 2, 'structVersion': 1, 'type': 3, 'name': 'ASIO', 'deviceCount': 0, 'defaultInputDevice': -1, 'defaultOutputDevice': -1}
+
+{'index': 3, 'structVersion': 1, 'type': 13, 'name': 'Windows WASAPI', 'deviceCount': 3, 'defaultInputDevice': 12, 'defaultOutputDevice': 11}
+
+{'index': 4, 'structVersion': 1, 'type': 11, 'name': 'Windows WDM-KS', 'deviceCount': 16, 'defaultInputDevice': 13, 'defaultOutputDevice': 14}
+
+ASIO Device Count = 0
+```
+
+上記のリストの中から使用するデバイスを使用
 ```
 device index>>>
 ```
